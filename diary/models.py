@@ -12,7 +12,7 @@ class TimeStampedModel(models.Model):
         abstract = True
 
 
-class CommonPostModel(models.Model, TimeStampedModel):
+class CommonPostModel(TimeStampedModel):
     """
     모든 게시물이 공유하는 필드 생성을 위한 기본 모델
     """

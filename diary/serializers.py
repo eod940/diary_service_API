@@ -52,4 +52,5 @@ class PostSerializer(serializers.ModelSerializer):
         """
         if check_password(validated_data.pop('password'), instance.password):
             return super().update(instance, validated_data)
-        return ValidationError("비밀번호가 다릅니다.")
+        raise ValidationError("비밀번호가 다릅니다.")
+

@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     # third-party-apps
     'rest_framework',
     # local-apps
+    'diary',
 ]
 
 MIDDLEWARE = [

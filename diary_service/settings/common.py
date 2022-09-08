@@ -12,6 +12,11 @@ environ.Env.read_env(
 )
 SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
+"""
+# .env의 내용
+SECRET_KEY='django-insecure-=!hi=g1hsm&fbs#xm@4vl_z)us7cradlb572=8pnj4afb7lyrx'
+DEBUG=TRUE
+"""
 
 ALLOWED_HOSTS = []
 
